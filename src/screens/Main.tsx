@@ -14,7 +14,8 @@ export const Main = () => {
           padding: "40px",
         }}
       >
-        <Card
+        <div
+          id="card-container"
           style={{
             backgroundColor: "#000",
             justifyContent: "space-between",
@@ -33,10 +34,11 @@ export const Main = () => {
               working at Globant as Web UI Developer
             </Typography>
           </div>
+
           <div>
-            <img width={"50%"} src={photo} />
+            <img className="photo" width={"50%"} src={photo} />
           </div>
-        </Card>
+        </div>
       </div>
     </>
   );

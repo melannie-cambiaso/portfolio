@@ -1,4 +1,4 @@
-import { Card, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Header } from "../components/Header";
 import photo from "../assets/photo.jpg";
 
@@ -7,14 +7,14 @@ export const Main = () => {
     <>
       <Header />
 
-      <div
+      <Box
         style={{
           display: "flex",
           textAlign: "center",
           padding: "40px",
         }}
       >
-        <div
+        <Box
           id="card-container"
           style={{
             backgroundColor: "#000",
@@ -25,21 +25,21 @@ export const Main = () => {
             display: "flex",
           }}
         >
-          <div>
+          <Box>
             <Typography color={"#fff"} variant="h3">
               👋Hi! I'm Melannie.
             </Typography>
             <Typography variant="h4" color={"#6c6c6d"}>
-              Web and Mobile Developer from Santiago, Chile. I'm currently
-              working at Globant as Web UI Developer
+              React Native Developer from Santiago, Chile. I'm currently working
+              at Perficient as Mobile Analyst
             </Typography>
-          </div>
+          </Box>
 
-          <div>
-            <img className="photo" width={"50%"} src={photo} />
-          </div>
-        </div>
-      </div>
+          <Box>
+            <img className="photo" width={"50%"} src={photo} alt="" />
+          </Box>
+        </Box>
+      </Box>
     </>
   );
 };

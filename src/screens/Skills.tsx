@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material"
 import { teal } from "@mui/material/colors"
-import { AboutMeCard } from "./AboutMeCard"
+import { AboutMeCard } from "../components/AboutMeCard"
 import VerifiedIcon from '@mui/icons-material/Verified';
 
 export const Skills = () => {

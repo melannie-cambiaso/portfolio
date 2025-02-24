@@ -2,7 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 import { Header } from "../components/Header";
 import photo from "../assets/photo.jpg";
 import { AboutMe } from "./AboutMe";
-import { Skills } from "../components/Skills";
+import { Skills } from "./Skills";
 
 export const Main = () => {
   return (
@@ -36,7 +36,7 @@ export const Main = () => {
               at Perficient as Mobile Analyst
             </Typography>
 
-            <Button href={`${import.meta.env.BASE_URL}CV_Melannie_Cambiaso.pdf`} download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
+            <Button href="https://melannie-cambiaso.github.io/portfolio/CV_Melannie_Cambiaso.pdf" download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
               Download CV
             </Button>
           </Box>

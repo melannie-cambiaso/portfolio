@@ -2,6 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 import { Header } from "../components/Header";
 import photo from "../assets/photo.jpg";
 import { AboutMe } from "./AboutMe";
+import { Skills } from "../components/Skills";
 
 export const Main = () => {
   return (
@@ -47,7 +48,7 @@ export const Main = () => {
         </Box>
       </Box >
       <AboutMe />
-
+      <Skills />
     </>
   );
 };

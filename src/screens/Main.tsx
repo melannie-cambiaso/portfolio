@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import { Header } from "../components/Header";
 import photo from "../assets/photo.jpg";
+import { AboutMe } from "./AboutMe";
 
 export const Main = () => {
   return (
@@ -34,7 +35,7 @@ export const Main = () => {
               at Perficient as Mobile Analyst
             </Typography>
 
-            <Button href="/CV_Melannie_Cambiaso.pdf" download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
+            <Button href="docs/CV_Melannie_Cambiaso.pdf" download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
               Download CV
             </Button>
           </Box>
@@ -45,6 +46,8 @@ export const Main = () => {
           </Box>
         </Box>
       </Box>
+      <AboutMe />
+
     </>
   );
 };

@@ -35,7 +35,7 @@ export const Main = () => {
               at Perficient as Mobile Analyst
             </Typography>
 
-            <Button href={"src/assets/CV_Melannie_Cambiaso.pdf"} download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
+            <Button href={"/CV_Melannie_Cambiaso.pdf"} download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
               Download CV
             </Button>
           </Box>

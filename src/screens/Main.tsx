@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { Header } from "../components/Header";
 import photo from "../assets/photo.jpg";
 
@@ -33,7 +33,12 @@ export const Main = () => {
               React Native Developer from Santiago, Chile. I'm currently working
               at Perficient as Mobile Analyst
             </Typography>
+
+            <Button href="/CV_Melannie_Cambiaso.pdf" download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
+              Download CV
+            </Button>
           </Box>
+
 
           <Box>
             <img className="photo" width={"50%"} src={photo} alt="" />

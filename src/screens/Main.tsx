@@ -35,7 +35,7 @@ export const Main = () => {
               at Perficient as Mobile Analyst
             </Typography>
 
-            <Button href="portfolio/docs/CV_Melannie_Cambiaso.pdf" download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
+            <Button href={`${import.meta.env.BASE_URL}/docs/CV_Melannie_Cambiaso.pdf`} download="CV_Melannie_Cambiaso.pdf" variant="outlined" color="secondary">
               Download CV
             </Button>
           </Box>
@@ -45,7 +45,7 @@ export const Main = () => {
             <img className="photo" width={"50%"} src={photo} alt="" />
           </Box>
         </Box>
-      </Box>
+      </Box >
       <AboutMe />
 
     </>

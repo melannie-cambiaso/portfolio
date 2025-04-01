@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import { Header } from "../components/Header";
-import photo from "../assets/photo.jpg";
+import photo from "../assets/photo.png";
 import { AboutMe } from "./AboutMe";
 import { Skills } from "./Skills";
 

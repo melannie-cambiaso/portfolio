@@ -5,7 +5,7 @@ export const Contact = () => {
 
     if (state.succeeded) {
         return (
-            <h2 className="font-monserrat" >
+            <h2 className="font-monse" >
                 Thanks for contacting!
             </h2>
         )
@@ -43,7 +43,7 @@ export const Contact = () => {
 
             <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 rounded-md transition cursor-pointer"
+                className="w-full bg-primary hover:bg-primary-tint text-white py-2 rounded-md transition cursor-pointer"
             >
                 Enviar
             </button>

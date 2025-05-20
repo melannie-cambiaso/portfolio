@@ -84,12 +84,12 @@ export const Projects = () => {
                         <div 
                         onMouseEnter={() => toggleHovered(element.id)}
                         onMouseLeave={() => toggleHovered(null)} 
-                        className="flex justify-center rounded-xl relative inline-block p-10">
-                            <img src={element.logo} width={300} />
+                        className="flex justify-center rounded-xl relative inline-block">
+                            <img src={element.logo} width={300} className="project-image" />
                             <div className={`rounded-xl absolute inset-0 bg-black opacity-50 ${hoveredId === element.id ? "" : "hidden"}`}></div>
                             <div className={`font-monserrat text-white ${hoveredId === element.id ? "" : "hidden"} absolute inset-0 rounded-xl p-5`}>
 
-                                <h2 className="mb-2">{element.text}</h2>
+                                <h2 className="mb-2 text-xs">{element.text}</h2>
 
                                 <div className="flex gap-4">
                                     {element.appleUrl ? (

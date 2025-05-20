@@ -17,7 +17,4 @@
       flex-direction: column-reverse !important;
       gap: 20px !important;
     }
-    img.photo, img.detail {
-        width: 200 !important;
-    }
   }

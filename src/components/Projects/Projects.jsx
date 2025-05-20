@@ -1,5 +1,4 @@
 import { globalStyles } from "../../constants/globalStyles"
-import './projects.css'
 import nfl from '../../assets/projects/nfl.webp'
 import evaluaRes from '../../assets/projects/evaluaRes.webp'
 import lessen from '../../assets/projects/lessen.png'
@@ -58,7 +57,7 @@ export const Projects = () => {
     ]
 
     return (
-        <div className="projects" id="projects">
+        <div className="flex justify-center flex-col items-center" id="projects">
             <h2 className="font-monserrat" style={globalStyles.title}>
                 Explore my <span className="text-primary">
                     Portfolio
@@ -68,10 +67,10 @@ export const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 flex flex-grow gap-4 details">
                 {
                     portfolio.map((element) => (
-                        <div className="rounded-xl detail group relative inline-block">
+                        <div className="flex justify-center rounded-xl group relative inline-block p-10">
                             <img src={element.logo} width={300} />
                             <div className="rounded-xl absolute inset-0 bg-black opacity-50 group-hover:block hidden"></div>
-                            <div className="font-monserrat text-white group-hover:block hidden text inset-0 rounded-xl p-5">
+                            <div className="font-monserrat text-white group-hover:block hidden absolute inset-0 rounded-xl p-5">
 
                                 <h2 className="mb-2">{element.text}</h2>
 

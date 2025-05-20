@@ -40,7 +40,7 @@ export const Header = () => {
                     Toolkit
                 </button>
 
-                <button className="secondary font-monserrat">
+                <button onClick={() => scrollTo("contact")} className="secondary font-monserrat">
                     Contact
                 </button>
             </div>

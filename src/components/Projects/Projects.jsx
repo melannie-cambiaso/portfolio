@@ -84,8 +84,6 @@ export const Projects = () => {
                         <div 
                         onMouseEnter={() => toggleHovered(element.id)}
                         onMouseLeave={() => toggleHovered(null)} 
-                        onTouchStart={() => toggleHovered(element.id)}
-                        onTouchEnd={() => toggleHovered(null)}
                         className="flex justify-center rounded-xl relative inline-block p-10">
                             <img src={element.logo} width={300} />
                             <div className={`rounded-xl absolute inset-0 bg-black opacity-50 ${hoveredId === element.id ? "" : "hidden"}`}></div>

@@ -1,12 +1,12 @@
 import { globalStyles } from "../../constants/globalStyles"
 import './projects.css'
-import nfl from '../../assets/nfl.webp'
-import evaluaRes from '../../assets/evaluaRes.webp'
-import lessen from '../../assets/lessen.png'
-import pelambres from '../../assets/pelambres.jpg'
-import safefleet from '../../assets/safefleet.png'
-import namutek from '../../assets/namutek.png'
-import boosmap from '../../assets/boosmap.jpg'
+import nfl from '../../assets/projects/nfl.webp'
+import evaluaRes from '../../assets/projects/evaluaRes.webp'
+import lessen from '../../assets/projects/lessen.png'
+import pelambres from '../../assets/projects/pelambres.jpg'
+import safefleet from '../../assets/projects/safefleet.png'
+import namutek from '../../assets/projects/namutek.png'
+import boosmap from '../../assets/projects/boosmap.jpg'
 import apple from '../../assets/apple.svg'
 import google from '../../assets/google.png'
 
@@ -68,7 +68,7 @@ export const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 flex flex-grow gap-4 details">
                 {
                     portfolio.map((element) => (
-                        <div className="w-1/2 bg-secondary rounded-xl detail group relative inline-block">
+                        <div className="rounded-xl detail group relative inline-block">
                             <img src={element.logo} width={300} />
                             <div className="rounded-xl absolute inset-0 bg-black opacity-50 group-hover:block hidden"></div>
                             <div className="font-monserrat text-white group-hover:block hidden text inset-0 rounded-xl p-5">

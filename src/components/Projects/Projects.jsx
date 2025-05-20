@@ -95,13 +95,13 @@ export const Projects = () => {
 
                                 <div className="flex gap-4">
                                     {element.appleUrl ? (
-                                        <button className="cursor-pointer" onClick={() => handleClick(element.appleUrl)}>
+                                        <button className="" onClick={() => handleClick(element.appleUrl)}>
                                             <img width={100} src={apple} alt="" />
                                         </button>
                                     ) : null}
 
                                     {element.googleUrl ? (
-                                        <button className="cursor-pointer" onClick={() => handleClick(element.googleUrl)}>
+                                        <button className="" onClick={() => handleClick(element.googleUrl)}>
                                             <img width={100} src={google} alt="" />
                                         </button>
                                     ) : null}

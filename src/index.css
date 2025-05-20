@@ -3,6 +3,14 @@
 :root {
   background-color: #242424;
 }
+body {
+  cursor: url("/src/assets/cursor.png") 0 0, auto !important;
+
+}
+
+button, a {
+  cursor: url("/src/assets/cursor.png") 0 0, auto !important;
+}
 
 @theme {
   --font-monserrat: Montserrat;

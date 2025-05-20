@@ -8,6 +8,7 @@ import { Projects } from './components/Projects/Projects'
 import { Toolkit } from './components/Toolkit/Toolkit'
 import { DarkModeContext } from './context/DarkModeContext'
 import { ToggleDarkMode } from './components/ToggleDarkMode/ToggleDarkMode'
+import { ArrowButton } from './components/ArrowButton/ArrowButton'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Projects />
       <Toolkit />
       <Contact />
+      <ArrowButton />
 
     </div>
   )

@@ -22,7 +22,7 @@ export const AboutMe = () => {
             </h2>
 
             <p className='font-monserrat' style={styles.text}>
-                I'm <span className='text-primary'>Melannie Cambiaso,</span> Experienced mobile developer specializing in React Native development. Dedicated to crafting high-quality mobile applications with a focus on user experience, performance, and code excellence. Detail-oriented, organized, and committed to delivering outstanding results. Strong team player with excellent problem-solving skills and adaptability to new challenges.
+                I'm <span className='text-primary'>Melannie Cambiaso,</span> I'm an experienced mobile developer specializing in React Native development. Dedicated to crafting high-quality mobile applications with a focus on user experience, performance, and code excellence. Detail-oriented, organized, and committed to delivering outstanding results. Strong team player with excellent problem-solving skills and adaptability to new challenges.
             </p>
 
            <button className='font-monserrat border button'>

@@ -3,7 +3,7 @@ import reactnative from '../../assets/logos/reactnative.png'
 import redux from '../../assets/logos/redux.jpg'
 import jest from '../../assets/logos/jest.png'
 import reacttesting from '../../assets/logos/reacttesting.jpg'
-import expo from '../../assets/logos/expo.png'
+import expo from '../../assets/logos/expo.jpg'
 import reactnavigation from '../../assets/logos/reactnavigation.webp'
 import typescript from '../../assets/logos/typescript.png'
 import javascript from '../../assets/logos/javascript.png'
@@ -21,18 +21,18 @@ export const Toolkit = () => {
     const {darkMode} = useContext(DarkModeContext)
     const logos = [
         reactnative, 
-        redux, 
         jest, 
+        reactquery, 
+        redux, 
         reacttesting, 
-        expo, 
         reactnavigation, 
+        git, 
+        swift,
+        swiftui,
+        github,
+        expo, 
         typescript,
         javascript,
-        reactquery, 
-        git, 
-        github,
-        swift,
-        swiftui
     ]
     return (
         <div className="flex justify-center items-center flex-col mt-20" id="toolkit">
@@ -40,7 +40,7 @@ export const Toolkit = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10" >
                 {
                     logos.map((logo) => (
-                        <img width={250} src={logo} className={`rounded-xl ${darkMode ? "bg-white" : ""}`} />
+                        <img width={250} src={logo} className={`rounded-xl ${darkMode ? "bg-white" : "bg-red"}`} />
                     ))
                 }
             </div>

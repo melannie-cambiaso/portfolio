@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import './App.css'
 import { AboutMe } from './components/AboutMe/AboutMe'
 import { Contact } from './components/Contact/Contact'
@@ -5,14 +6,16 @@ import { Header } from './components/Header/Header'
 import { Presentation } from './components/Presentation/Presentation'
 import { Projects } from './components/Projects/Projects'
 import { Toolkit } from './components/Toolkit/Toolkit'
-
-// style={{ backgroundColor: "white", display: "flex", padding: 20, flexDirection: "column", gap: 20 }}
+import { DarkModeContext } from './context/DarkModeContext'
+import { ToggleDarkMode } from './components/ToggleDarkMode/ToggleDarkMode'
 
 function App() {
 
-  return (
-    <div className='flex flex-col bg-white p-20 gap-20'>
+  const {darkMode} = useContext(DarkModeContext)
 
+  return (
+    <div className={`flex flex-col ${darkMode ? "bg-secondary" : "bg-white"} pt-10 pl-10 pr-10`}>
+      <ToggleDarkMode />
       <Header />
       <Presentation />
       <AboutMe />

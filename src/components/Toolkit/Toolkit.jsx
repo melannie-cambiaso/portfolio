@@ -12,10 +12,13 @@ import git from '../../assets/logos/git.png'
 import github from '../../assets/logos/github.jpg'
 import swift from '../../assets/logos/swift.png'
 import swiftui from '../../assets/logos/swiftui.webp'
+import { useContext } from "react"
+import { DarkModeContext } from "../../context/DarkModeContext"
 
 
 
 export const Toolkit = () => {
+    const {darkMode} = useContext(DarkModeContext)
     const logos = [
         reactnative, 
         redux, 
@@ -32,12 +35,12 @@ export const Toolkit = () => {
         swiftui
     ]
     return (
-        <div className="flex justify-center items-center flex-col" id="toolkit">
-            <h2 className="font-monserrat pb-4" style={globalStyles.title}>My <span className="text-primary">Toolkit</span></h2>
+        <div className="flex justify-center items-center flex-col mt-20" id="toolkit">
+            <h2 className={`font-monserrat ${darkMode ? "text-white" : ""} mb-2`} style={globalStyles.title}>My <span className="text-primary">Toolkit</span></h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-10" >
                 {
                     logos.map((logo) => (
-                        <img width={250} src={logo} className="rounded-xl" />
+                        <img width={250} src={logo} className={`rounded-xl ${darkMode ? "bg-white" : ""}`} />
                     ))
                 }
             </div>

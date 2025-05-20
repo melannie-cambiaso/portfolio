@@ -8,11 +8,13 @@ import namutek from '../../assets/projects/namutek.png'
 import boosmap from '../../assets/projects/boosmap.jpg'
 import apple from '../../assets/apple.svg'
 import google from '../../assets/google.png'
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { DarkModeContext } from "../../context/DarkModeContext"
 
 export const Projects = () => {
 
     const [hoveredId, setHoveredId] = useState(null)
+    const {darkMode} = useContext(DarkModeContext)
 
     const portfolio = [
         {
@@ -72,7 +74,7 @@ export const Projects = () => {
 
     return (
         <div className="flex justify-center flex-col items-center" id="projects">
-            <h2 className="font-monserrat" style={globalStyles.title}>
+            <h2 className={`font-monserrat ${darkMode ? "text-white" : ""} mb-2`} style={globalStyles.title}>
                 Explore my <span className="text-primary">
                     Portfolio
                 </span>

@@ -1,7 +1,10 @@
 import { useForm } from "@formspree/react";
+import { useContext } from "react";
+import { DarkModeContext } from "../../context/DarkModeContext";
 
 export const Contact = () => {
     const [state, handleSubmit] = useForm("mvgaybpp");
+    const {darkMode} = useContext(DarkModeContext)
 
     if (state.succeeded) {
         return (
@@ -12,11 +15,11 @@ export const Contact = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="font-monserrat p-6 bg-white rounded-lg shadow-md space-y-4" id="contact">
-            <h2 className="text-2xl font-bold text-gray-800">Contáctame</h2>
+        <form onSubmit={handleSubmit} className={`font-monserrat p-6 ${darkMode ? "bg-secondary" : "bg-white"} rounded-lg shadow-md space-y-4 mt-20`} id="contact">
+            <h2 className={`text-2xl font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>Contáctame</h2>
 
             <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="name" className={`block text-sm font-medium ${darkMode ? "text-white" : "text-gray-700"}`}>
                     Nombre
                 </label>
                 <input
@@ -29,7 +32,7 @@ export const Contact = () => {
             </div>
 
             <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="message" className={`block text-sm font-medium ${darkMode ? "text-white" : "text-gray-700"}`}>
                     Mensaje
                 </label>
                 <textarea

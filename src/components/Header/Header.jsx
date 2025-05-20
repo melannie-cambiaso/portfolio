@@ -1,7 +1,7 @@
 export const Header = () => {
 
     const scrollTo = (page) => {
-        document.getElementById(page)?.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById(page)?.scrollIntoView({ behavior: "smooth" });
     }
 
     return (

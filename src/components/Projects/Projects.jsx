@@ -87,7 +87,7 @@ export const Projects = () => {
                         onMouseEnter={() => toggleHovered(element.id)}
                         onMouseLeave={() => toggleHovered(null)} 
                         className="flex justify-center rounded-xl relative inline-block">
-                            <img src={element.logo} width={300} className="project-image" />
+                            <img src={element.logo} width={300} className="rounded-xl" />
                             <div className={`rounded-xl absolute inset-0 bg-black opacity-50 ${hoveredId === element.id ? "" : "hidden"}`}></div>
                             <div className={`font-monserrat text-white ${hoveredId === element.id ? "" : "hidden"} absolute inset-0 rounded-xl p-5`}>
 

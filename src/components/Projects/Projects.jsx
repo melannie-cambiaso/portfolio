@@ -89,7 +89,7 @@ export const Projects = () => {
                             <div className={`rounded-xl absolute inset-0 bg-black opacity-50 ${hoveredId === element.id ? "" : "hidden"}`}></div>
                             <div className={`font-monserrat text-white ${hoveredId === element.id ? "" : "hidden"} absolute inset-0 rounded-xl p-5`}>
 
-                                <h2 className="mb-2 text-xs">{element.text}</h2>
+                                <h2 className="mb-2 text-xs md:text-base">{element.text}</h2>
 
                                 <div className="flex gap-4">
                                     {element.appleUrl ? (

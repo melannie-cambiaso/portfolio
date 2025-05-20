@@ -1,13 +1,24 @@
-html {
-    background-color: black;
+@import "tailwindcss";
+
+:root {
+  background-color: #242424;
+}
+
+@theme {
+  --font-monserrat: Montserrat;
+  --color-primary: #FAA4BD;
+  --color-secondary: #2e2e2e;
 }
 
 @media screen and (max-width: 900px) {
-    #card-container {
+    .container {
       flex-direction: column-reverse !important;
+      gap: 20px !important;
+    }
+    .details {
+      flex-direction: column !important;
     }
     img.photo {
         width: 200 !important;
     }
   }
-

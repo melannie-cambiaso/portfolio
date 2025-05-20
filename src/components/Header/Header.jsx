@@ -36,7 +36,7 @@ export const Header = () => {
                     Projects
                 </button>
 
-                <button className="secondary font-monserrat">
+                <button onClick={() => scrollTo("toolkit")} className="secondary font-monserrat">
                     Toolkit
                 </button>
 

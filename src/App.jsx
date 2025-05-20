@@ -3,6 +3,7 @@ import { AboutMe } from './components/AboutMe/AboutMe'
 import { Header } from './components/Header/Header'
 import { Presentation } from './components/Presentation/Presentation'
 import { Projects } from './components/Projects/Projects'
+import { Toolkit } from './components/Toolkit/Toolkit'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Presentation />
       <AboutMe />
       <Projects />
+      <Toolkit />
 
     </div>
   )

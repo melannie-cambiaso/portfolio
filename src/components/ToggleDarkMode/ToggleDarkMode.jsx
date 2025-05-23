@@ -9,7 +9,7 @@ export const ToggleDarkMode = () => {
     }
 
     return (
-        <>
+        <div className="mb-2">
         <h2 className={`font-monserrat ${darkMode ? "text-white" : ""}`}>Dark Mode</h2>
         <button
             onClick={toggleDarkMode}
@@ -21,6 +21,6 @@ export const ToggleDarkMode = () => {
                     }`}
             />
         </button>
-        </>
+        </div>
     )
 }

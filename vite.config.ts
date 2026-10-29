@@ -5,7 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/portfolio/",
+  // GitHub Pages serves under /portfolio/; Vercel serves from the domain root.
+  base: process.env.VERCEL ? "/" : "/portfolio/",
   build: {
     rollupOptions: {
       input: {

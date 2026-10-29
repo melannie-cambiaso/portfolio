@@ -30,7 +30,7 @@ export const AboutMe = () => {
             </p>
 
            <button className={`font-monserrat border button ${darkMode ? "text-white border-white": ""}`}>
-             <a target='_blank' href="https://melannie-cambiaso.github.io/portfolio/CV_Melannie_Cambiaso.pdf" download="CV_Melannie_Cambiaso.pdf" >
+             <a target='_blank' href={`${import.meta.env.BASE_URL}CV_Melannie_Cambiaso.pdf`} download="CV_Melannie_Cambiaso.pdf" >
               Download CV
             </a>
            </button>

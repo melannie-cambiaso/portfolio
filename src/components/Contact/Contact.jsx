@@ -16,11 +16,11 @@ export const Contact = () => {
 
     return (
         <form onSubmit={handleSubmit} className={`font-monserrat p-6 ${darkMode ? "bg-secondary" : "bg-white"} rounded-lg shadow-md space-y-4 mt-20`} id="contact">
-            <h2 className={`text-2xl font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>Contáctame</h2>
+            <h2 className={`text-2xl font-bold ${darkMode ? "text-white" : "text-gray-800"}`}>Contact Me</h2>
 
             <div>
                 <label htmlFor="name" className={`block text-sm font-medium ${darkMode ? "text-white" : "text-gray-700"}`}>
-                    Nombre
+                    Name
                 </label>
                 <input
                     type="text"
@@ -33,7 +33,7 @@ export const Contact = () => {
 
             <div>
                 <label htmlFor="message" className={`block text-sm font-medium ${darkMode ? "text-white" : "text-gray-700"}`}>
-                    Mensaje
+                    Message
                 </label>
                 <textarea
                     id="message"
@@ -48,7 +48,7 @@ export const Contact = () => {
                 type="submit"
                 className="w-full bg-primary hover:bg-primary-tint text-white py-2 rounded-md transition "
             >
-                Enviar
+                Send
             </button>
         </form>
 

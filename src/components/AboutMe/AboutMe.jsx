@@ -22,7 +22,11 @@ export const AboutMe = () => {
             </h2>
 
             <p className={`mt-2 font-monserrat ${darkMode ? "text-white" : "text-secondary-tint"}`}>
-                I'm <span className='text-primary'>Melannie Cambiaso,</span> I'm an experienced mobile developer specializing in React Native development. Dedicated to crafting high-quality mobile applications with a focus on user experience, performance, and code excellence. Detail-oriented, organized, and committed to delivering outstanding results. Strong team player with excellent problem-solving skills and adaptability to new challenges.
+                I'm <span className='text-primary'>Melannie Cambiaso,</span> a Mobile Developer with 6+ years of specialized experience in React Native, building high-performance, scalable cross-platform apps for production environments. I've shipped to millions of users at companies like Globant and Perficient, with a focus on clean architecture, test coverage, and measurable performance improvements.
+            </p>
+
+            <p className={`mt-2 font-monserrat ${darkMode ? "text-white" : "text-secondary-tint"}`}>
+                Lately I've been migrating apps to React Native 0.83, raising unit test coverage to ~82% with Jest and React Testing Library, and exploring the New Architecture and performance profiling with Flipper.
             </p>
 
            <button className={`font-monserrat border button ${darkMode ? "text-white border-white": ""}`}>

@@ -11,10 +11,13 @@ export const Presentation = () => {
                 I'm <span className='text-primary'>Melannie</span>,
             </h2>
             <h2 style={globalStyles.title} className={`font-monserrat text-center ${darkMode ? "text-white" : ""}`}>
-                React Native Developer
+                Mobile Developer
             </h2>
+            <p className={`font-monserrat text-center mb-4 ${darkMode ? "text-white" : "text-secondary-tint"}`}>
+                React Native · 6+ years shipping production apps to millions of users
+            </p>
             <div className={`font-monserrat border rounded-xl p-2 ${darkMode ? "text-white border-white" : ""}`}>
-                Hi!
+                Santiago, Chile · Open to new opportunities
             </div>
             <img src={avatar} alt="avatar" style={{width: 300}} />
         </div>

@@ -4,6 +4,7 @@ import evaluaRes from '../../assets/projects/evaluaRes.webp'
 import lessen from '../../assets/projects/lessen.png'
 import pelambres from '../../assets/projects/pelambres.jpg'
 import safefleet from '../../assets/projects/safefleet.png'
+import aramco from '../../assets/projects/aramco.jpg'
 import namutek from '../../assets/projects/namutek.png'
 import boosmap from '../../assets/projects/boosmap.jpg'
 import apple from '../../assets/apple.svg'
@@ -18,6 +19,13 @@ export const Projects = () => {
 
     const portfolio = [
         {
+            logo: aramco,
+            text: "Migrated 5 core modules (auth, home, purchase history, notifications, profile) of the Aramco Estaciones fuel-payment and loyalty app to React Native 0.83, raising unit test coverage to ~82% with Jest and React Testing Library. Also delivered the end-to-end profile editing feature, including email OTP verification.",
+            appleUrl: "https://apps.apple.com/cl/app/aramco-estaciones/id6748840023",
+            googleUrl: "https://play.google.com/store/apps/details?id=com.esmax.app",
+            id: 8
+        },
+        {
             logo: pelambres,
             text: "Contributed to mobile application development for the mining sector by building features with React Native and MobX, improving field operations efficiency. Deploy on AppStore and PlayStore for enterprise environment",
             id: 1
@@ -31,7 +39,7 @@ export const Projects = () => {
         },
         {
             logo: boosmap,
-            text: "Handled legacy app maintenance and led the development of a new React Native application, supporting the release process to both iOS and Android platforms",
+            text: "Built a delivery management app from zero to production on the App Store and Google Play, covering the order lifecycle, real-time driver tracking with Google Maps, and push notifications via Firebase",
             appleUrl: "https://apps.apple.com/cl/app/booster/id1577414103",
             googleUrl: "https://play.google.com/store/apps/details?id=com.boosmap.booster2&hl=es_CL",
             id: 3
@@ -45,7 +53,7 @@ export const Projects = () => {
         },
         {
             logo: nfl,
-            text: "Boosted performance by 40% by implementing FlashList and integrating React Query from scratch on a React Native NFL streamming app for SmartTVs.",
+            text: "Boosted rendering performance by 20% (measured with Flipper) by migrating from FlatList to FlashList and introducing React Query for data caching and background refetching on the NFL streaming app. Also built an accessible UI component library with a distributed team in Chile and Colombia.",
             appleUrl: "https://apps.apple.com/us/app/nfl/id389781154?platform=appleTV",
             googleUrl: "https://play.google.com/store/apps/details?id=com.gotv.nflgamecenter.us.lite&hl=es_CL",
             id: 5
@@ -84,6 +92,7 @@ export const Projects = () => {
                 {
                     portfolio.map((element) => (
                         <div 
+                        key={element.id}
                         onMouseEnter={() => toggleHovered(element.id)}
                         onMouseLeave={() => toggleHovered(null)} 
                         className="flex justify-center rounded-xl relative inline-block">

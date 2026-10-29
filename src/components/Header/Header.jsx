@@ -20,6 +20,12 @@ export const Header = () => {
                 </button>
 
                 <button
+                    onClick={() => scrollTo("experience")}
+                    className="font-monserrat hover:bg-secondary text-white rounded-3xl md:rounded-full p-2">
+                    Experience
+                </button>
+
+                <button
                     onClick={() => scrollTo("projects")}
                     className="font-monserrat hover:bg-secondary text-white rounded-3xl md:rounded-full p-2">
                     Projects
